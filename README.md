@@ -2,6 +2,7 @@
 
 > A beautifully easy to use form for React!
 
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![NPM](https://img.shields.io/npm/v/beautiform.svg)](https://www.npmjs.com/package/beautiform) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
