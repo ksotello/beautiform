@@ -1,22 +1,24 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import FormDataProvider from './FormDataProvider'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
+export default class Form extends Component {
   static propTypes = {
-    text: PropTypes.string
+    children: PropTypes.oneOfType([PropTypes.node, PropTypes.array])
+  }
+
+  state = {
+    formData: {}
   }
 
   render() {
-    const {
-      text
-    } = this.props
+    const { children } = this.props
+    const { formData } = this.state
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
+      <FormDataProvider formData={formData}>
+        {children}
+      </FormDataProvider>
     )
   }
 }

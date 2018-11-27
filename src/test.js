@@ -3,15 +3,15 @@ import { mount } from 'enzyme'
 
 import '../setupTests'
 
-import ExampleComponent from './'
+import Form from './'
 
-describe('ExampleComponent', () => {
+describe('<Form />', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Form).toBeTruthy()
   })
 
   it('should mount', done => {
-    const wrapper = mount(<ExampleComponent />)
+    const wrapper = mount(<Form><div /></Form>)
     expect(wrapper.exists()).toBe(true)
     wrapper.unmount()
     done()
